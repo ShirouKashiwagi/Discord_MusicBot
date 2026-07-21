@@ -10,7 +10,7 @@ public class MusicBotLauncher {
 	
 	private static JDA jda = null;
 	// botのトークン情報を設定
-	private static final String BOT_TOKEN = "MTUyNDc3MDQzMTM1NjI0NDE0OA.GYsorV.epHw_2eYj6qndFH2atdydVnTAK63a35advaUOE";
+	private static final String BOT_TOKEN = "環境変数";
 	
 	// bot起動
 	public static void main(String[] args) {
