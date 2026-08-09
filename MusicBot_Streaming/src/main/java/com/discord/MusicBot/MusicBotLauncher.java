@@ -7,6 +7,9 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class MusicBotLauncher {
 	
+    FileRepository fileRepository = new FileRepository("music/");
+    AudioService audioService = new AudioService(fileRepository);
+    AudioController controller = new AudioController(audioService);
 	
 	private static JDA jda = null;
 	// botのトークン情報を設定
