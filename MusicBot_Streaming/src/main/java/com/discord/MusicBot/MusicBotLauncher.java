@@ -9,7 +9,7 @@ public class MusicBotLauncher {
 	
     FileRepository fileRepository = new FileRepository("music/");
     AudioService audioService = new AudioService(fileRepository);
-//    AudioController controller = new AudioController(audioService);
+    AudioController controller = new AudioController(audioService, fileRepository);
 	
 	private static JDA jda = null;
 	// botのトークン情報を設定
