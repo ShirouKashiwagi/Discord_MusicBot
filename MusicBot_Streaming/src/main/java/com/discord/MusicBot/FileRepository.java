@@ -28,9 +28,8 @@ public class FileRepository {
                 .map(File::getName)
                 .toList();
     }
-
+    
     public String getFilePath(String fileName) {
         return musicFolderPath + "/" + fileName;
     }
-
 }
