@@ -2,6 +2,9 @@ package com.discord.MusicBot;
 
 import java.util.List;
 
+import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
+import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;
+
 public class AudioService {
 
     private final FileRepository fileRepository;
@@ -17,7 +20,7 @@ public class AudioService {
 
     // 指定ファイルを再生する（中身はあとで詰める）
     public void play(String fileName) {
-        // TODO: LavaPlayer で fileName をロードして再生
+    	AudioPlayerManager play = new DefaultAudioPlayerManager();
     }
 
     // ランダム再生
